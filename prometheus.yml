@@ -5,8 +5,9 @@ global:
 
 # Attach these labels to any time series or alerts when communicating with
 # external systems (federation, remote storage, Alertmanager).
-external_labels:
-  monitor: "prometheus_${NAMESPACE}"
+  external_labels:
+    monitor: "consol_prometheus"
+    cluster: "c1"
 
 rule_files:
 - '*.rules'
